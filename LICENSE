@@ -1,20 +1,63 @@
-MIT License
+BLCaptain Style Skill License
+版权所有 (c) 2026 爆裂队长NEXT (BLCaptain)
 
-Copyright (c) 2026 BLCaptain Style Skill contributors
+本项目采用「双许可」模式。以中文条款为准，English summary below.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, subject to the following conditions:
+────────────────────────────────────────────────────────
+一、个人与开源用途 —— 免费
+────────────────────────────────────────────────────────
+在以下用途中，您可以免费使用、复制、修改、分发本软件及其衍生作品，
+无需另行授权：
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+  1. 个人学习、研究、评测；
+  2. 个人非商业创作（用本软件生成的图文作品本身归您所有、任意使用，
+     不受本许可限制）；
+  3. 在采用 OSI 认可的开源许可证、并公开完整源代码的开源项目中
+     使用或集成本软件。
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+唯一要求：在源代码或文档中保留本许可与上述版权声明。
+
+────────────────────────────────────────────────────────
+二、闭源 / 商业用途 —— 需购买商业授权
+────────────────────────────────────────────────────────
+将本软件（或其衍生作品、或其实质性部分）用于以下场景，须事先取得
+书面商业授权：
+
+  1. 闭源软件、闭源服务、SaaS 或任何不公开源代码的产品；
+  2. 以营利为直接目的的商业产品或商业服务；
+  3. 任何与上述等同的闭源商业场景。
+
+商业授权请联系：blteam2026@outlook.com
+
+> 说明：用本软件生成的「图文作品」本身不受商业授权限制——把生成的
+> 卡片用于商业是您内容的事，自由使用。需要授权的是把「本软件」本身
+> 嵌入闭源 / 商业产品再分发。
+
+────────────────────────────────────────────────────────
+三、无担保
+────────────────────────────────────────────────────────
+本软件按「现状」提供，不附带任何明示或暗示的担保，包括但不限于
+适销性、特定用途适用性与不侵权的担保。在任何情况下，作者或版权
+持有人均不对任何索赔、损害或其他责任负责。
+
+════════════════════════════════════════════════════════
+English Summary (the Chinese text above prevails)
+════════════════════════════════════════════════════════
+Dual-license:
+
+1. Personal & Open-Source use — FREE.
+   Personal learning/research, personal non-commercial creation (the
+   cards you generate are yours, unrestricted), and use within
+   open-source projects (OSI-approved license with published source)
+   are free. Keep this license and copyright notice.
+
+2. Closed-source / Commercial use — requires a paid commercial license.
+   Embedding this software (or substantial parts/derivatives) into
+   closed-source software, paid products, SaaS, or for-profit services
+   requires a commercial license. Contact: blteam2026@outlook.com
+   (Using the *output images* commercially is always free — only
+   redistributing the *software itself* in a closed/commercial product
+   needs a license.)
+
+3. Provided "AS IS", without warranty of any kind. The authors are not
+   liable for any claim, damages, or other liability.
