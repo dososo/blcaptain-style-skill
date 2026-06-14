@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "从聊天到知识库",
+    "platform": "xhs",
+    "format": "xhs",
+    "style": "sp-warm-study",
+    "brand": "BLTeam Notes",
+    "footer": "builder diary / knowledge workflow"
+  },
+  "cards": [
+    {
+      "name": "01-diary-cover",
+      "layout": "diary-scrapbook",
+      "style": "sp-warm-study",
+      "kicker": "Builder Diary",
+      "title": "别让 AI 聊完就忘",
+      "subtitle": "有价值的不是一次对话，而是能留下来的工作记忆。",
+      "notes": [
+        "对话要变成笔记",
+        "笔记要能被检索",
+        "检索要能回到行动"
+      ],
+      "annotation": "不是多存一点文本，而是把经验变成下一次可调用的上下文。",
+      "image": {
+        "src": "assets/desk-notes.png",
+        "purpose": "desk-notes",
+        "position": "center 50%"
+      }
+    },
+    {
+      "name": "02-stack",
+      "layout": "stack-map",
+      "style": "sp-mist-field",
+      "kicker": "Memory Stack",
+      "title": "知识库不是文件夹，是工作流",
+      "layers": [
+        {
+          "title": "原始材料",
+          "body": "文章、截图、对话、链接。"
+        },
+        {
+          "title": "结构化笔记",
+          "body": "主题、标签、索引、摘要。"
+        },
+        {
+          "title": "可检索记忆",
+          "body": "关键词、语义、时间线。"
+        },
+        {
+          "title": "行动回路",
+          "body": "下一次写作、调研、决策时自动调用。"
+        }
+      ]
+    },
+    {
+      "name": "03-checklist",
+      "layout": "annotated-checklist",
+      "style": "sp-hearth-table",
+      "kicker": "SOP",
+      "title": "每次结束前，做一次记忆 closeout",
+      "subtitle": "不存流水账，只存以后真的会用到的东西。",
+      "checks": [
+        {
+          "title": "这次有什么长期判断？",
+          "body": "观点、规则、偏好、踩坑。"
+        },
+        {
+          "title": "放在哪个主题下？",
+          "body": "不要散落在临时聊天里。"
+        },
+        {
+          "title": "下次怎么被调用？",
+          "body": "写成可检索、可执行的句子。"
+        }
+      ],
+      "annotation": "少存，但要能用。"
+    }
+  ]
+}

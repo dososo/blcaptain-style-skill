@@ -1,0 +1,104 @@
+<!doctype html>
+<!-- LEGACY_COMPATIBILITY_ONLY: 旧 Signal Grid 字体种子，仅保留给历史对照；当前入口使用 assets/template-signal-ledger-card.html。 -->
+<html lang="zh-CN" data-system="signal-grid">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Signal Grid Typography Seed</title>
+<style>
+:root {
+  --sg-display: Inter, "Helvetica Neue", Arial, "PingFang SC", "Noto Sans CJK SC", "Noto Sans", system-ui, sans-serif;
+  --sg-body: Inter, "Helvetica Neue", Arial, "PingFang SC", "Noto Sans CJK SC", "Noto Sans", system-ui, sans-serif;
+  --sg-mono: "SFMono-Regular", Consolas, "Roboto Mono", monospace;
+  --bg:#f7f8fb;
+  --fg:#050608;
+  --muted:#5b6472;
+  --accent:#0047ff;
+  --line:#d7dee9;
+  --surface:#ffffff;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:#dfe4ec; font-family:var(--sg-body); }
+.poster {
+  width:1080px;
+  height:1440px;
+  background:
+    linear-gradient(90deg, rgba(0,71,255,.08), transparent 44%),
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px),
+    var(--bg);
+  background-size:auto, 64px 64px, 64px 64px, auto;
+  color:var(--fg);
+  padding:66px;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  position:relative;
+}
+.sg-label {
+  font-family:var(--sg-body);
+  font-size:16px;
+  line-height:1;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  font-weight:760;
+  color:var(--accent);
+}
+.sg-display {
+  font-family:var(--sg-display);
+  font-size:108px;
+  line-height:.90;
+  letter-spacing:-.066em;
+  font-weight:610;
+  margin:0;
+  max-width:8.5ch;
+}
+.sg-body {
+  font-family:var(--sg-body);
+  font-size:27px;
+  line-height:1.38;
+  color:var(--muted);
+  margin:0;
+}
+.sg-caption {
+  font-family:var(--sg-body);
+  font-size:17px;
+  line-height:1.25;
+  letter-spacing:.04em;
+  color:var(--muted);
+}
+.sg-number {
+  font-family:var(--sg-display);
+  font-size:126px;
+  line-height:.82;
+  letter-spacing:-.08em;
+  font-weight:640;
+  color:var(--accent);
+}
+.sg-quote {
+  font-family:var(--sg-display);
+  font-size:42px;
+  line-height:1.10;
+  font-weight:520;
+}
+.sg-card {
+  background:var(--surface);
+  border:1px solid var(--line);
+  padding:28px;
+  border-radius:14px;
+}
+.module-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:60px; }
+.foot {
+  margin-top:auto;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+</style>
+</head>
+<body>
+<!-- POSTERS_HERE -->
+</body>
+</html>

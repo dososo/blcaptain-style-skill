@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "鸿蒙智行 Campaign Visual",
+    "platform": "wide",
+    "format": "wide",
+    "style": "sl-electric-blue",
+    "brand": "BL Auto Lab",
+    "footer": "campaign visual / product story"
+  },
+  "cards": [
+    {
+      "name": "01-hero-wide",
+      "layout": "product-hero",
+      "format": "wide",
+      "style": "sl-electric-blue",
+      "kicker": "HIMA",
+      "title": "智能汽车，不止一块屏",
+      "subtitle": "智驾、座舱、动力、安全和服务，组成真正的出行系统。",
+      "image": {
+        "src": "assets/car-hero.png",
+        "purpose": "car-hero",
+        "position": "center 56%"
+      }
+    },
+    {
+      "name": "02-feature-square",
+      "layout": "feature-strip",
+      "format": "square",
+      "style": "sl-graphite-mint",
+      "kicker": "Core Tech",
+      "title": "技术感，要能被用户感知",
+      "features": [
+        {
+          "title": "智驾",
+          "body": "少一点紧张，多一点从容。"
+        },
+        {
+          "title": "座舱",
+          "body": "屏幕、语音、娱乐和服务连成一体。"
+        },
+        {
+          "title": "动力",
+          "body": "高压平台与增程系统共同管理能效。"
+        },
+        {
+          "title": "安全",
+          "body": "车身、感知、通信、隐私一起防护。"
+        }
+      ]
+    },
+    {
+      "name": "03-matrix-square",
+      "layout": "feature-matrix",
+      "format": "square",
+      "style": "sl-safety-coral",
+      "kicker": "Product Matrix",
+      "title": "体验层，不是参数表",
+      "features": [
+        {
+          "title": "看得见",
+          "body": "设计 / 空间 / 屏幕"
+        },
+        {
+          "title": "开得稳",
+          "body": "底盘 / 动力 / 控制"
+        },
+        {
+          "title": "用得顺",
+          "body": "座舱 / 服务 / 生态"
+        },
+        {
+          "title": "放得心",
+          "body": "安全 / 通信 / 隐私"
+        }
+      ]
+    }
+  ]
+}

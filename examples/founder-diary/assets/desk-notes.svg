@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#efe5d1"/>
+<g opacity=".55" stroke="#231f18" stroke-width="1"><path d="M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200M0 640h1200M0 720h1200M0 800h1200"/></g>
+<rect x="140" y="130" width="430" height="520" rx="18" fill="#fffaf0" stroke="#231f18" opacity=".85"/><rect x="640" y="180" width="360" height="270" rx="20" fill="#f7d66d" stroke="#231f18" opacity=".9"/><rect x="630" y="510" width="390" height="160" rx="18" fill="#ffffff" stroke="#231f18" opacity=".8"/>
+<path d="M210 235h290M210 300h250M210 365h310M210 430h220M210 495h280" stroke="#231f18" stroke-width="12" stroke-linecap="round" opacity=".32"/>
+<path d="M690 270h250M690 330h190M690 585h280" stroke="#231f18" stroke-width="11" stroke-linecap="round" opacity=".38"/>
+<circle cx="935" cy="705" r="74" fill="#a33a2f" opacity=".85"/>
+<text x="210" y="760" font-family="Georgia,serif" font-size="54" font-weight="700" fill="#231f18">Builder's Field Notes</text>
+</svg>

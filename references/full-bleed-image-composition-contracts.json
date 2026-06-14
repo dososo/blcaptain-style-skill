@@ -1,0 +1,131 @@
+{
+  "version": "2026-05-31",
+  "status": "contract-draft-needs-proof",
+  "requiredFields": [
+    "imageRole",
+    "subjectMap",
+    "safeTextZones",
+    "avoidZones",
+    "quietZoneRatio",
+    "lightQuality",
+    "noMaskAttempted",
+    "titleCanvasRatio",
+    "objectPosition",
+    "overlayToken",
+    "overlayPeakAlpha",
+    "cropStrategy",
+    "thumbnailCheck",
+    "fallbackPlan"
+  ],
+  "minQuietZoneRatio": 0.3,
+  "maxTitleCanvasRatio": 0.4,
+  "maxOverlayPeakAlpha": 0.3,
+  "allowedLightQualities": [
+    "dawn-fog",
+    "overcast",
+    "golden-hour",
+    "dusk",
+    "forest-diffuse",
+    "film-soft",
+    "low-saturation-natural",
+    "paper-quiet"
+  ],
+  "thumbnailChecks": [
+    "pass",
+    "pending"
+  ],
+  "subjectTypes": [
+    "human",
+    "face",
+    "product",
+    "food",
+    "landscape",
+    "ui",
+    "vehicle",
+    "object",
+    "abstract"
+  ],
+  "gridZones": [
+    "top-left",
+    "top",
+    "top-right",
+    "center-left",
+    "center",
+    "center-right",
+    "bottom-left",
+    "bottom",
+    "bottom-right"
+  ],
+  "avoidZones": [
+    "face",
+    "eyes",
+    "hands",
+    "body-anchor",
+    "product-logo",
+    "vehicle-front",
+    "food-focal-area",
+    "dense-ui-text",
+    "screenshot-text",
+    "brand-mark"
+  ],
+  "overlayTokens": {
+    "image-soft-mask": "low-opacity global readability support",
+    "image-local-scrim": "localized title-zone contrast",
+    "image-bottom-fade": "footer or bottom title contrast",
+    "image-side-paper-panel": "Still Paper editorial text surface beside subject",
+    "image-ledger-panel": "Signal Proof evidence text surface beside image or proof"
+  },
+  "cropStrategies": [
+    "center-crop",
+    "subject-left",
+    "subject-right",
+    "subject-bottom",
+    "negative-space-top",
+    "negative-space-left",
+    "negative-space-right",
+    "manual-crop-required",
+    "reject-image"
+  ],
+  "manualReviewStates": [
+    "PASS",
+    "PASS_WITH_MINOR_TUNE",
+    "FAIL_VISUAL",
+    "FAIL_ASSET",
+    "FAIL_SUBJECT_OCCLUSION",
+    "FAIL_CONTRAST",
+    "FAIL_CROP",
+    "FAIL_CONTRACT"
+  ],
+  "systemRules": {
+    "stillPaper": {
+      "allowed": [
+        "landscape quiet zone",
+        "small human mood anchor",
+        "paper side panel",
+        "localized soft mask"
+      ],
+      "forbidden": [
+        "commercial travel poster",
+        "title over face",
+        "saturated stock photo",
+        "busy texture behind small text",
+        "image so strong that paper system disappears"
+      ]
+    },
+    "signalLedger": {
+      "allowed": [
+        "readable screenshot evidence",
+        "proof panel beside image",
+        "callout outside image",
+        "mono proof label in safe area"
+      ],
+      "forbidden": [
+        "screenshot wallpaper",
+        "title over UI text",
+        "fake dashboard background",
+        "neon tech poster",
+        "more than two callouts over image"
+      ]
+    }
+  }
+}

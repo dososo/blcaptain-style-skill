@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#22c7b8"/><stop offset="1" stop-color="#7c8cff"/></linearGradient><filter id="blur"><feGaussianBlur stdDeviation="18"/></filter></defs>
+<rect width="1200" height="900" fill="#eaf7f5"/><circle cx="980" cy="120" r="210" fill="#7c8cff" opacity=".22" filter="url(#blur)"/><circle cx="210" cy="750" r="240" fill="#22c7b8" opacity=".25" filter="url(#blur)"/>
+<g fill="none" stroke="#0f172a" stroke-opacity=".18" stroke-width="2"><path d="M160 250h880M160 450h880M160 650h880"/><path d="M280 150v600M600 150v600M920 150v600"/></g>
+<g><rect x="150" y="170" width="260" height="170" rx="34" fill="white" opacity=".78"/><rect x="470" y="170" width="260" height="170" rx="34" fill="white" opacity=".78"/><rect x="790" y="170" width="260" height="170" rx="34" fill="white" opacity=".78"/><rect x="310" y="520" width="260" height="170" rx="34" fill="white" opacity=".78"/><rect x="630" y="520" width="260" height="170" rx="34" fill="white" opacity=".78"/></g>
+<g fill="#0f172a"><circle cx="280" cy="255" r="28"/><circle cx="600" cy="255" r="28"/><circle cx="920" cy="255" r="28"/><circle cx="440" cy="605" r="28"/><circle cx="760" cy="605" r="28"/></g>
+<g stroke="url(#g)" stroke-width="10" fill="none" stroke-linecap="round"><path d="M410 255 C445 255 445 255 470 255"/><path d="M730 255 C765 255 765 255 790 255"/><path d="M600 340 C580 430 500 470 440 520"/><path d="M920 340 C910 440 830 480 760 520"/></g>
+<text x="600" y="815" text-anchor="middle" font-family="Inter,Arial" font-size="42" font-weight="800" fill="#0f172a">Parallel Research Agents</text>
+</svg>

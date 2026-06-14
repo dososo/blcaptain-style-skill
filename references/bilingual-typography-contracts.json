@@ -1,0 +1,109 @@
+{
+  "version": "2026-05-31",
+  "status": "contract-draft-needs-visual-proof",
+  "systems": {
+    "stillPaper": {
+      "id": "SP-TYPE-01",
+      "name": "Paper Serif / Field Sans",
+      "intent": "Chinese is the main content voice; English behaves like editorial marginalia, issue labels, dates, place markers, and quiet rhythm.",
+      "displayStack": [
+        "Source Serif 4",
+        "Newsreader",
+        "Source Han Serif SC",
+        "Noto Serif CJK SC",
+        "Songti SC",
+        "STSong",
+        "Georgia",
+        "serif"
+      ],
+      "bodyStack": [
+        "IBM Plex Sans",
+        "Source Han Sans SC",
+        "Noto Sans CJK SC",
+        "PingFang SC",
+        "Noto Sans",
+        "system-ui",
+        "sans-serif"
+      ],
+      "labelStack": [
+        "IBM Plex Sans",
+        "Source Han Sans SC",
+        "Noto Sans CJK SC",
+        "PingFang SC",
+        "system-ui",
+        "sans-serif"
+      ],
+      "rules": {
+        "latinInChineseTitleScale": "0.86-0.94em",
+        "displayWeight": "560-700",
+        "latinLabelTracking": "0.08em-0.15em",
+        "chineseTracking": "0-0.04em",
+        "smallSerifOverTexture": "forbidden"
+      },
+      "antiPatterns": [
+        "generic beige typography",
+        "fake luxury Didot-style display",
+        "tiny serif captions on paper grain",
+        "English overpowering Chinese content"
+      ]
+    },
+    "signalLedger": {
+      "id": "SL-TYPE-01",
+      "name": "Evidence Sans / Ledger Mono",
+      "intent": "Chinese states the judgment; English carries system labels, tool names, proof marks, units, and reliability cues.",
+      "displayStack": [
+        "IBM Plex Sans",
+        "Inter",
+        "Source Han Sans SC",
+        "Noto Sans CJK SC",
+        "PingFang SC",
+        "Noto Sans",
+        "system-ui",
+        "sans-serif"
+      ],
+      "bodyStack": [
+        "IBM Plex Sans",
+        "Inter",
+        "Source Han Sans SC",
+        "Noto Sans CJK SC",
+        "PingFang SC",
+        "Noto Sans",
+        "system-ui",
+        "sans-serif"
+      ],
+      "monoStack": [
+        "IBM Plex Mono",
+        "SFMono-Regular",
+        "Consolas",
+        "Roboto Mono",
+        "monospace"
+      ],
+      "rules": {
+        "displayWeight": "500-620",
+        "displayLineHeight": "0.94-1.06",
+        "useTabularNumbers": true,
+        "monoUse": "proof ids, timestamps, short commands, log labels",
+        "serifDisplay": "forbidden-until-approved-subtheme"
+      },
+      "antiPatterns": [
+        "generic blue-white SaaS typography",
+        "fake futuristic font",
+        "heavy 700+ large titles",
+        "mono paragraphs",
+        "fake logs or fake code"
+      ]
+    }
+  },
+  "proofRequiredBeforeRuntimeBinding": [
+    "SP-TYPE-BI-01",
+    "SL-TYPE-BI-01"
+  ],
+  "sourceUrls": [
+    "https://github.com/notofonts/noto-cjk",
+    "https://github.com/notofonts/notofonts.github.io",
+    "https://fonts.adobe.com/fonts/source-serif-4",
+    "https://github.com/productiontype/Newsreader",
+    "https://github.com/IBM/plex",
+    "https://github.com/rsms/inter"
+  ]
+}

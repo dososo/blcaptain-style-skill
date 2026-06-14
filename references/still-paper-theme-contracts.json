@@ -1,0 +1,104 @@
+{
+  "$schema": "https://blcaptain.local/schemas/still-paper-theme-contracts.v1.json",
+  "system": "Still Paper",
+  "purpose": "Lock Still Paper into five tactile editorial directions so outputs do not collapse into generic beige cards.",
+  "status": {
+    "SP-01 Mist Field": "approved",
+    "SP-02 Warm Study": "approved",
+    "SP-03 Coastal Quiet": "approved",
+    "SP-04 Night Grain": "approved",
+    "SP-05 Hearth & Table": "approved"
+  },
+  "themes": {
+    "SP-01 Mist Field": {
+      "board": "01",
+      "role": "outdoor field notes / nature observation / light travel documentary",
+      "palette": {
+        "bg": "#F2F3EC",
+        "surface": "#FFFFFA",
+        "fg": "#1D241D",
+        "muted": "#69705F",
+        "accent": "#6F805D",
+        "accent2": "#C6D1B7",
+        "line": "#D8DDCF"
+      },
+      "texture": "paper-fiber-soft",
+      "imageTreatment": "forest, field, hiking road, cloudy landscape, lake/mountain, clean photograph, no embedded typography",
+      "layoutTone": "quiet field note, centered image discipline, restrained metadata, enough negative space",
+      "useCases": ["山野", "户外", "轻旅行", "非虚构观察", "慢下来", "专注力"],
+      "antiPatterns": ["urban tech screenshot", "dense data card", "neon colors", "direction-board crop as hero", "generic white card"]
+    },
+    "SP-02 Warm Study": {
+      "board": "02",
+      "role": "reading notes / creator diary / desk and coffee editorial",
+      "palette": {
+        "bg": "#F6F1E8",
+        "surface": "#FFFDFC",
+        "fg": "#1C1A18",
+        "muted": "#746B61",
+        "accent": "#8C5A3C",
+        "accent2": "#C9A184",
+        "line": "#DDD2C5"
+      },
+      "texture": "paper-warm-grain",
+      "imageTreatment": "paper, notebook, coffee, books, ceramic, fabric, wood, soft window light",
+      "layoutTone": "warm study note, intimate but not cute, editorial and readable",
+      "useCases": ["阅读笔记", "creator diary", "咖啡", "书桌", "home office", "产品思考"],
+      "antiPatterns": ["cold dashboard", "saturated photo", "black UI panels", "decorative stationery overload"]
+    },
+    "SP-03 Coastal Quiet": {
+      "board": "03",
+      "role": "coastal / lake / mountain reflection and wellness",
+      "palette": {
+        "bg": "#F4F6F3",
+        "surface": "#FFFFFF",
+        "fg": "#1D2328",
+        "muted": "#6A747B",
+        "accent": "#7E9AA6",
+        "accent2": "#C7D7DD",
+        "line": "#D8E0E3"
+      },
+      "texture": "paper-cool-mist",
+      "imageTreatment": "sea, lake, misty mountain, open sky, quiet human figure, blue-gray natural light",
+      "layoutTone": "open, breathable, reflective, light but not empty",
+      "useCases": ["海边", "湖泊", "山", "习惯", "wellness", "reflective cover"],
+      "antiPatterns": ["hard tech UI", "dark game art", "warm food palette", "postcard cliché"]
+    },
+    "SP-04 Night Grain": {
+      "board": "04",
+      "role": "film / game / night observation / cinematic reflection",
+      "palette": {
+        "bg": "#141312",
+        "surface": "#1E1C1A",
+        "fg": "#F2EAD9",
+        "muted": "#B9AA94",
+        "accent": "#D0A164",
+        "accent2": "#766245",
+        "line": "#3A332C"
+      },
+      "texture": "night-grain",
+      "imageTreatment": "night street, film still, game key art, shadow, rain, low-light still life",
+      "layoutTone": "cinematic, restrained, high contrast, less copy, strong focal image",
+      "useCases": ["电影评论", "游戏 essay", "夜间观察", "暗色封面", "cinematic reflection"],
+      "antiPatterns": ["long paragraphs", "weak contrast", "casual lifestyle posts", "neon cyberpunk excess"]
+    },
+    "SP-05 Hearth & Table": {
+      "board": "05",
+      "role": "food / coffee / home / kitchen / table scenes",
+      "palette": {
+        "bg": "#F7EFE3",
+        "surface": "#FFFDF8",
+        "fg": "#211914",
+        "muted": "#7A6758",
+        "accent": "#A8653F",
+        "accent2": "#D9B08A",
+        "line": "#E2D2C0"
+      },
+      "texture": "table-linen",
+      "imageTreatment": "food close-up, cafe table, ceramic, bread, fruit, coffee, linen and wood textures",
+      "layoutTone": "warm table note, appetite-aware, tactile, calm domestic editorial",
+      "useCases": ["美食", "咖啡", "home", "kitchen", "slow lifestyle", "table scenes"],
+      "antiPatterns": ["unappetizing food image", "tiny food photo", "overly clean tech look", "excessive beige flatness"]
+    }
+  }
+}

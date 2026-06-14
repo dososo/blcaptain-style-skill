@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- LEGACY_COMPATIBILITY_ONLY: 旧 Editorial seed，仅保留给历史样例回放；当前入口使用 assets/template-still-paper-card.html。 -->
+<html lang="zh-CN" data-mode="editorial" data-theme="editorial-ink-classic">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BLCaptain Editorial Seed</title>
+<style>
+/*
+  Seed template for Editorial mode.
+  Agent rule: copy this file, replace only <!-- POSTERS_HERE --> unless custom CSS is unavoidable.
+  Theme rule: data-theme must be one of references/theme-presets.md.
+*/
+:root{
+  --font-editorial-display:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;
+  --font-editorial-body:"PingFang SC","Noto Sans CJK SC","Source Han Sans SC",system-ui,sans-serif;
+  --paper:#f3f0e8;--ink:#0a0a0b;--muted:#68625a;--line:rgba(10,10,11,.22);--accent:#111;--surface:rgba(255,255,255,.40);
+}
+[data-theme="editorial-indigo-porcelain"]{--paper:#f2f4f5;--ink:#0a1f3d;--muted:#5f6d78;--line:rgba(10,31,61,.20);--accent:#315d93;--surface:rgba(255,255,255,.46)}
+[data-theme="editorial-forest-ink"]{--paper:#f5f1e8;--ink:#16251b;--muted:#5d665d;--line:rgba(22,37,27,.22);--accent:#2e6b4f;--surface:rgba(255,255,255,.42)}
+[data-theme="editorial-kraft-paper"]{--paper:#eedfc7;--ink:#2a1e13;--muted:#755f49;--line:rgba(42,30,19,.24);--accent:#9b5a2e;--surface:rgba(255,245,225,.46)}
+[data-theme="editorial-dune"]{--paper:#f0e6d2;--ink:#1f1a14;--muted:#6f6557;--line:rgba(31,26,20,.22);--accent:#8f7650;--surface:rgba(255,255,255,.35)}
+[data-theme="editorial-midnight-ink"]{--paper:#0e0d0c;--ink:#ece2cf;--muted:#9a8c75;--line:rgba(236,226,207,.22);--accent:#d4a04a;--surface:rgba(255,255,255,.07)}
+*{box-sizing:border-box}body{margin:0;background:#d6d2c8;font-family:var(--font-editorial-body);display:grid;gap:40px;padding:40px}
+.poster{width:1080px;height:1440px;background:var(--paper);color:var(--ink);padding:68px;display:flex;flex-direction:column;gap:28px;overflow:hidden;position:relative}
+.poster.wide{width:2100px;height:900px}.poster.square{width:1080px;height:1080px}
+h1{font-family:var(--font-editorial-display);font-size:104px;line-height:.94;letter-spacing:-.045em;margin:0;text-wrap:balance}
+p{font-size:28px;line-height:1.42;color:var(--muted);margin:0}.foot{margin-top:auto;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:18px}
+.frame-img,.frame-shot{border:1px solid var(--line);background:var(--surface);border-radius:24px;overflow:hidden}
+.frame-img img,.frame-shot img{width:100%;height:100%;object-fit:cover;display:block}
+</style>
+</head>
+<body>
+<!-- POSTERS_HERE -->
+</body>
+</html>

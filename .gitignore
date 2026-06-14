@@ -1,0 +1,49 @@
+# macOS / editor noise
+.DS_Store
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+
+# Logs and temporary files
+*.log
+.cache/
+.tmp/
+tmp/
+temp/
+
+# Generated release/demo outputs
+examples/generated/
+
+# Local visual proof outputs (derived; never published)
+local-tests/
+
+# ── Local working environment (kept on disk, never published) ──
+CLAUDE.md
+LAUNCH-TWEET.md
+tasks/
+docs/archive/
+docs/codex/
+docs/01-gap-audit.md
+docs/02-product-requirements.md
+docs/03-visual-system-brief.md
+docs/04-layout-contracts-plan.md
+docs/05-typography-and-spacing-contract.md
+docs/06-image-asset-workflow.md
+docs/07-validator-and-qa-plan.md
+docs/08-implementation-action-plan.md
+docs/ASSET-OVERVIEW.md
+docs/RELEASE-FINALIZATION-PLAN.md
+docs/README.md
+references/visual-direction-boards/
+
+# Archive packages and external bundles
+*.zip
+*.tar
+*.tar.gz
+
+# Python caches
+__pycache__/
+*.pyc
+docs/hero-cover-wall-sources.md

@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "title": "Claude Code Sub-Agents 并行调研",
+    "platform": "xhs",
+    "format": "xhs",
+    "style": "sl-graphite-mint",
+    "brand": "BLTeam",
+    "footer": "agent workflow / fixed layout"
+  },
+  "cards": [
+    {
+      "name": "01-cover",
+      "layout": "statement-cover",
+      "style": "sl-electric-blue",
+      "kicker": "Claude Code",
+      "title": "5 个调研任务，同时开跑",
+      "subtitle": "不是让 AI 更忙，而是把问题拆成真正能并行的任务。",
+      "points": [
+        "一个问题，拆成 5 条线",
+        "每条线只追一个判断",
+        "最后由总编合并证据"
+      ],
+      "mark": "SUB-AGENTS / PARALLEL RESEARCH"
+    },
+    {
+      "name": "02-flow",
+      "layout": "three-lane-flow",
+      "style": "sl-graphite-mint",
+      "kicker": "Workflow",
+      "title": "并行不是加速键，是拆解能力",
+      "subtitle": "任务边界清楚，Sub-Agent 才不会互相污染。",
+      "steps": [
+        {
+          "title": "拆任务",
+          "body": "把一个大问题拆成互不阻塞的 3～5 个方向。"
+        },
+        {
+          "title": "分角色",
+          "body": "每个 Sub-Agent 只负责一个判断，不抢上下文。"
+        },
+        {
+          "title": "总编合并",
+          "body": "最后统一证据、去重、排序，形成结论。"
+        }
+      ]
+    },
+    {
+      "name": "03-map",
+      "layout": "essay-split",
+      "style": "sl-graphite-mint",
+      "kicker": "System Map",
+      "title": "上下文越少，执行越稳",
+      "subtitle": "每个 Agent 只拿自己需要的材料。",
+      "points": [
+        "减少互相污染",
+        "降低重复阅读",
+        "让最终汇总更可控"
+      ],
+      "image": {
+        "src": "assets/agent-map.png",
+        "purpose": "agent-map",
+        "position": "center 50%"
+      }
+    },
+    {
+      "name": "04-dashboard",
+      "layout": "dashboard-grid",
+      "style": "sl-electric-blue",
+      "kicker": "Control Room",
+      "title": "一个任务拆成 4 个信号面板",
+      "panels": [
+        {
+          "value": "5",
+          "title": "Sub-Agents",
+          "body": "同时检索不同来源"
+        },
+        {
+          "value": "3",
+          "title": "Evidence Types",
+          "body": "官网、社区、代码仓库"
+        },
+        {
+          "value": "1",
+          "title": "Editor",
+          "body": "负责最后判断"
+        },
+        {
+          "value": "0",
+          "title": "重复上下文",
+          "body": "减少互相干扰"
+        }
+      ]
+    },
+    {
+      "name": "05-close",
+      "layout": "quote-focus",
+      "style": "sl-graphite-mint",
+      "kicker": "Takeaway",
+      "quote": "并行不是让 AI 更忙，是让每个 AI 只做一件事。",
+      "subtitle": "任务拆得好，Agent 才真的像团队。"
+    }
+  ]
+}

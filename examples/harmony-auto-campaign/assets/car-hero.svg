@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><linearGradient id="sky" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#101010"/><stop offset="1" stop-color="#32302b"/></linearGradient><linearGradient id="gold" x1="0" x2="1"><stop stop-color="#d8b46a"/><stop offset="1" stop-color="#fff2bd"/></linearGradient><filter id="soft"><feGaussianBlur stdDeviation="16"/></filter></defs>
+<rect width="1600" height="900" fill="url(#sky)"/><circle cx="1180" cy="120" r="240" fill="#d8b46a" opacity=".16" filter="url(#soft)"/>
+<path d="M0 630 C280 530 520 560 820 600 C1050 632 1280 620 1600 520 L1600 900 L0 900Z" fill="#141414"/>
+<path d="M250 590 C400 470 580 420 830 420 C1020 420 1130 485 1250 600 L1335 650 L210 650Z" fill="#f7f4eb"/>
+<path d="M450 505 C560 455 760 442 940 455 C1038 464 1095 505 1160 585 L375 585 C390 550 415 525 450 505Z" fill="#101010"/>
+<path d="M550 475 C700 445 870 450 965 470 C1025 485 1070 520 1118 572 L445 572 C470 525 505 493 550 475Z" fill="url(#gold)" opacity=".38"/>
+<circle cx="460" cy="650" r="78" fill="#080808"/><circle cx="460" cy="650" r="36" fill="#d8b46a"/><circle cx="1110" cy="650" r="78" fill="#080808"/><circle cx="1110" cy="650" r="36" fill="#d8b46a"/>
+<path d="M260 648 L1320 648" stroke="#d8b46a" stroke-width="5" opacity=".75"/>
+<text x="108" y="140" font-family="Inter,Arial" font-size="36" font-weight="800" fill="#d8b46a">HIMA CAMPAIGN VISUAL</text>
+</svg>

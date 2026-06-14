@@ -1,0 +1,201 @@
+{
+  "version": "2026-06-01",
+  "purpose": "Machine-readable visual grammar contracts for BLCaptain real-scene social card production.",
+  "method": {
+    "jsonIsNecessaryButNotSufficient": true,
+    "requiredLayers": [
+      "visual-grammar-md",
+      "machine-readable-json-contract",
+      "seed-template",
+      "real-scene-fixture",
+      "validator",
+      "manual-visual-review"
+    ],
+    "directionValidationEntry": "real-scene-png",
+    "forbiddenDirectionValidationEntries": [
+      "deck-gallery",
+      "contact-sheet",
+      "thumbnail-matrix",
+      "isolated-type-board"
+    ]
+  },
+  "platforms": {
+    "xhs": {
+      "width": 1080,
+      "height": 1440,
+      "primaryUse": "real social feed validation"
+    },
+    "wechatWide": {
+      "width": 2100,
+      "height": 900,
+      "primaryUse": "official account main cover"
+    },
+    "wechatSquare": {
+      "width": 1080,
+      "height": 1080,
+      "primaryUse": "official account share cover"
+    }
+  },
+  "systems": {
+    "Still Paper": {
+      "role": "quiet paper, photography, editorial narrative",
+      "approvedThemes": [
+        "SP-01 Mist Field",
+        "SP-02 Warm Study",
+        "SP-03 Coastal Quiet",
+        "SP-04 Night Grain",
+        "SP-05 Hearth & Table"
+      ],
+      "layoutRules": {
+        "outerMarginPx": [56, 76],
+        "imageHeightCanvasRatio": [0.35, 0.58],
+        "footerHeightPx": [36, 64],
+        "maxTitleLines": 3,
+        "preferredChineseTitleChars": [8, 22]
+      },
+      "typeRules": {
+        "displayPx": [72, 104],
+        "leadPx": [22, 30],
+        "captionPx": [12, 16],
+        "latinRole": "publication metadata, issue rhythm, place/date, one-word emphasis"
+      },
+      "imageRules": {
+        "mustDeclareSubjectMapWhenFullBleed": true,
+        "mustAvoid": ["face", "human figure", "product logo", "food subject", "core landscape focal point"],
+        "forbidDirectionBoardCropAsHero": true
+      }
+    },
+    "Signal Proof": {
+      "role": "evidence, screenshots, data, workflow, decision",
+      "approvedThemes": [
+        "SL-01 Electric Blue",
+        "SL-02 Graphite Mint",
+        "SL-03 Safety Coral",
+        "SL-04 Acid Lime"
+      ],
+      "candidateThemes": [
+        "SL-05 Signal Noir"
+      ],
+      "layoutRules": {
+        "outerMarginPx": [52, 72],
+        "evidenceHeightCanvasRatio": [0.42, 0.68],
+        "maxCallouts": 2,
+        "maxTitleLines": 3,
+        "preferredChineseTitleChars": [8, 20]
+      },
+      "typeRules": {
+        "displayPx": [64, 96],
+        "bodyPx": [22, 30],
+        "captionPx": [12, 16],
+        "latinRole": "proof id, source, trace, timestamp, status, tool name"
+      },
+      "evidenceRules": {
+        "screenshotReadable": true,
+        "requiresSourceOrTimestamp": true,
+        "forbidFakeLogsOrFakeData": true
+      }
+    },
+    "Bridge Canvas": {
+      "role": "system display layer only",
+      "approvedThemes": [
+        "BC-01 Bridge Canvas"
+      ],
+      "forbidOrdinaryContentCardUse": true
+    }
+  },
+  "recipes": [
+    {
+      "id": "SP-R01",
+      "system": "Still Paper",
+      "name": "Field Photo Cover",
+      "useCases": ["travel", "lifestyle", "open-source teaser with atmosphere"],
+      "layoutRules": ["large image well", "large Chinese judgment title", "thin metadata row", "quiet footer"],
+      "typeRules": ["serif Chinese display", "Latin publication metadata", "no broken two-character line rhythm"],
+      "imageRules": ["photo is emotional evidence", "subject map required for full-bleed", "no direction-board crop"],
+      "failureSignals": ["generic beige template", "photo as decoration", "fallback English typography"]
+    },
+    {
+      "id": "SP-R02",
+      "system": "Still Paper",
+      "name": "Image Journal Split",
+      "useCases": ["essay cover", "field note", "reading note"],
+      "layoutRules": ["one image zone", "one text zone", "controlled asymmetry"],
+      "typeRules": ["title 2-3 lines", "lead under 2 short sentences", "low-voice footer"],
+      "imageRules": ["image supports mood", "no text on busy subject"],
+      "failureSignals": ["two equal focal points", "caption overload", "image too small"]
+    },
+    {
+      "id": "SP-R03",
+      "system": "Still Paper",
+      "name": "Quote Field",
+      "useCases": ["single thesis", "closing note", "reflective statement"],
+      "layoutRules": ["intentional whitespace", "top kicker", "bottom source anchor"],
+      "typeRules": ["display sentence is the card", "source row required", "Latin accent optional"],
+      "imageRules": ["image optional", "texture must remain subtle"],
+      "failureSignals": ["empty because content is missing", "quote without context", "decorative paper only"]
+    },
+    {
+      "id": "SP-R04",
+      "system": "Still Paper",
+      "name": "Essay Marginalia",
+      "useCases": ["2-3 paragraph essay", "method note", "creator diary"],
+      "layoutRules": ["main text column", "marginalia column", "hairline divider"],
+      "typeRules": ["short paragraphs", "marginal English has role", "no dense article dump"],
+      "imageRules": ["small evidence crop allowed", "not image-led"],
+      "failureSignals": ["article pasted into card", "no hierarchy", "marginalia as decoration"]
+    },
+    {
+      "id": "SL-R01",
+      "system": "Signal Proof",
+      "name": "Screenshot Proof",
+      "useCases": ["tool tutorial", "open-source proof", "workflow evidence"],
+      "layoutRules": ["screenshot is largest evidence zone", "max two callouts", "source strip"],
+      "typeRules": ["judgment title", "proof labels", "Latin-first tool names"],
+      "imageRules": ["screenshot readable", "no cropped key UI", "source or timestamp required"],
+      "failureSignals": ["screenshot wallpaper", "too many callouts", "generic blue-white SaaS card"]
+    },
+    {
+      "id": "SL-R02",
+      "system": "Signal Proof",
+      "name": "Metric Insight",
+      "useCases": ["data recap", "growth proof", "performance insight"],
+      "layoutRules": ["one hero metric", "one chart", "one interpretation"],
+      "typeRules": ["large tabular number", "unit and baseline required", "caption names source"],
+      "imageRules": ["chart must be legible", "no fake data"],
+      "failureSignals": ["dashboard dump", "metric without conclusion", "red-alert visual"]
+    },
+    {
+      "id": "SL-R03",
+      "system": "Signal Proof",
+      "name": "Comparison Ledger",
+      "useCases": ["tool comparison", "decision card", "buying guide"],
+      "layoutRules": ["2-3 options", "4-7 criteria", "verdict block"],
+      "typeRules": ["comparison labels", "clear winner or tradeoff", "no tiny table text"],
+      "imageRules": ["icons optional", "product screenshots only if readable"],
+      "failureSignals": ["too many equal rows", "no verdict", "table too dense"]
+    },
+    {
+      "id": "SL-R04",
+      "system": "Signal Proof",
+      "name": "Workflow Trace",
+      "useCases": ["agent workflow", "tutorial sequence", "process explanation"],
+      "layoutRules": ["3-5 steps", "visible connection", "status or output evidence"],
+      "typeRules": ["step labels", "short consequences", "mono only for real commands"],
+      "imageRules": ["screenshot or status evidence preferred", "no fake logs"],
+      "failureSignals": ["process poster without proof", "more than five steps", "looks like PPT flowchart"]
+    }
+  ],
+  "firstRealSceneTarget": {
+    "id": "SP-MF-R01-PROOF",
+    "platform": "xhs",
+    "system": "Still Paper",
+    "theme": "SP-01 Mist Field",
+    "recipe": "SP-MF-R01",
+    "task": "Still Paper · Mist Field source-board proof before other scene work",
+    "sourceBoard": "references/visual-direction-boards/01.png",
+    "primaryJudgment": "在湖边，找回呼吸的节奏。",
+    "mainEvidence": "real 3:4 Still Paper PNG with quiet photography and paper rhythm",
+    "mustValidateBefore": ["other-real-scene-work", "seed-template", "engine-binding"],
+    "reviewStates": ["有希望", "不对", "值得继续", "淘汰"]
+  }
+}

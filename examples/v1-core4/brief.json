@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "title": "BLCaptain Core 4 Production Binding",
+    "format": "xhs",
+    "brand": "BLCaptain Style",
+    "footer": "Core 4 / Production Binding"
+  },
+  "cards": [
+    {
+      "name": "SP-C01-Editorial-Cover",
+      "layout": "sp-c01-editorial-cover",
+      "style": "sp-coastal-quiet",
+      "kicker": "Still Paper · SP-C01",
+      "issue": "Editorial Cover",
+      "title": "在风景里，找回专注力",
+      "subtitle": "封面只保留一个判断，让图像承担情绪。",
+      "meta": [
+        "2026.05",
+        "FIELD NOTE",
+        "IMAGE 58%"
+      ],
+      "imageLabel": "SP-C01 / HERO IMAGE",
+      "image": {
+        "src": "assets/sp-c01-landscape.png",
+        "purpose": "hero image",
+        "position": "center 58%"
+      }
+    },
+    {
+      "name": "SP-C02-Essay-Split",
+      "layout": "sp-c02-essay-split",
+      "style": "sp-warm-study",
+      "kicker": "Still Paper · SP-C02",
+      "title": "留白，不是浪费时间",
+      "subtitle": "这一页只保留一个判断、一张图和一句引语。文字少了，版面才开始说话。",
+      "quote": "慢下来，是为了看清楚。",
+      "note": "BODY LIMIT · 70 CN CHARS",
+      "image": {
+        "src": "assets/sp-c02-still-life.png",
+        "purpose": "still life image",
+        "position": "center 52%"
+      }
+    },
+    {
+      "name": "SL-C01-Proof-Statement",
+      "layout": "sl-c01-proof-statement",
+      "style": "sl-graphite-mint",
+      "kicker": "Signal Proof · SL-C01",
+      "token": "WORKFLOW",
+      "title": "5 个任务，同时开跑",
+      "subtitle": "标题先给判断，流程图负责证明。",
+      "steps": [
+        {
+          "title": "拆问题",
+          "body": "切成可并行的任务线。"
+        },
+        {
+          "title": "并行查",
+          "body": "每条线只追一个判断。"
+        },
+        {
+          "title": "合证据",
+          "body": "汇总成可用结论。"
+        }
+      ],
+      "metrics": [
+        {
+          "value": "05",
+          "label": "parallel tasks"
+        },
+        {
+          "value": "3×",
+          "label": "coverage"
+        },
+        {
+          "value": "1",
+          "label": "final brief"
+        }
+      ]
+    },
+    {
+      "name": "SL-C02-Screenshot-Proof",
+      "layout": "sl-c02-screenshot-proof",
+      "style": "sl-electric-blue",
+      "kicker": "Signal Proof · SL-C02",
+      "token": "SCREENSHOT",
+      "title": "截图是证据层",
+      "subtitle": "界面必须足够大，旁注只告诉读者看哪里。",
+      "image": {
+        "src": "assets/sl-c02-screenshot.png",
+        "purpose": "screenshot proof",
+        "position": "center 50%"
+      },
+      "callouts": [
+        {
+          "title": "大图优先",
+          "body": "截图不做背景，也不缩成装饰。"
+        },
+        {
+          "title": "少字解释",
+          "body": "旁注只保留一条行动提示。"
+        }
+      ],
+      "proof": "05 parallel tasks"
+    }
+  ]
+}

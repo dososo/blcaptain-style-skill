@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- LEGACY_COMPATIBILITY_ONLY: 旧 Swiss seed，仅保留给历史样例回放；当前入口使用 assets/template-signal-ledger-card.html。 -->
+<html lang="zh-CN" data-mode="swiss" data-accent="swiss-ikb">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BLCaptain Swiss Seed</title>
+<style>
+/*
+  Seed template for Swiss mode.
+  Agent rule: copy this file, replace only <!-- POSTERS_HERE --> unless custom CSS is unavoidable.
+  Accent rule: data-accent must be one of references/theme-presets.md.
+*/
+:root{
+  --font-swiss:Inter,"Helvetica Neue",Arial,"PingFang SC",system-ui,sans-serif;
+  --paper:#f7f8fb;--ink:#050608;--muted:#5b6472;--line:#d8dee8;--accent:#002FA7;--surface:#fff;
+}
+[data-accent="swiss-lemon"]{--paper:#fbf7e2;--ink:#121212;--muted:#5f5a3c;--line:#e7d98a;--accent:#FFD500}
+[data-accent="swiss-lemon-green"]{--paper:#f3fae7;--ink:#111511;--muted:#58664b;--line:#d9ecc1;--accent:#C5E803}
+[data-accent="swiss-safety-orange"]{--paper:#fff6ef;--ink:#17120e;--muted:#725b49;--line:#f2c7ae;--accent:#FF6B35}
+*{box-sizing:border-box}body{margin:0;background:#e5e7eb;font-family:var(--font-swiss);display:grid;gap:40px;padding:40px}
+.poster{width:1080px;height:1440px;background:var(--paper);color:var(--ink);padding:64px;display:flex;flex-direction:column;gap:28px;overflow:hidden;position:relative}
+.poster.wide{width:2100px;height:900px}.poster.square{width:1080px;height:1080px}
+h1{font-size:96px;line-height:.92;letter-spacing:-.06em;font-weight:560;margin:0;text-wrap:balance}
+h2{font-size:56px;line-height:1;letter-spacing:-.04em;font-weight:520;margin:0}
+p{font-size:27px;line-height:1.38;color:var(--muted);margin:0}.card{border:1px solid var(--line);background:var(--surface);padding:28px}.foot{margin-top:auto;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:18px}
+.frame-shot{padding:18px;border:1px solid var(--line);background:var(--surface)}.device-browser{border:1px solid var(--line);overflow:hidden}.device-phone{border:8px solid var(--ink);border-radius:42px;overflow:hidden}
+</style>
+</head>
+<body>
+<!-- POSTERS_HERE -->
+</body>
+</html>

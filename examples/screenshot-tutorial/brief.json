@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "OpenClaw Dashboard 教程",
+    "platform": "xhs",
+    "format": "xhs",
+    "style": "sl-graphite-mint",
+    "brand": "BLCaptain",
+    "footer": "screenshot tutorial / evidence first"
+  },
+  "cards": [
+    {
+      "name": "01-screenshot",
+      "layout": "essay-split",
+      "style": "sl-graphite-mint",
+      "kicker": "Screenshot Tutorial",
+      "title": "截图不是装饰，是证据层",
+      "subtitle": "界面要够大，读者才相信你真的跑通过。",
+      "points": [
+        "先放大关键区域",
+        "再用少量标注解释",
+        "最后补行动步骤"
+      ],
+      "image": {
+        "src": "assets/openclaw-dashboard.png",
+        "purpose": "dashboard-screenshot",
+        "position": "center 50%"
+      }
+    },
+    {
+      "name": "02-checklist",
+      "layout": "annotated-checklist",
+      "style": "sl-acid-lime",
+      "kicker": "QA",
+      "title": "截图卡最容易翻车的 4 件事",
+      "checks": [
+        {
+          "title": "截图太小",
+          "body": "读者看不清，信任感直接掉。"
+        },
+        {
+          "title": "文字太多",
+          "body": "说明压过证据，画面变成说明书。"
+        },
+        {
+          "title": "没有焦点",
+          "body": "不知道该看哪里。"
+        },
+        {
+          "title": "过度装饰",
+          "body": "UI 被装饰淹没。"
+        }
+      ],
+      "annotation": "截图主题，宁可少字，也要把证据放大。"
+    }
+  ]
+}

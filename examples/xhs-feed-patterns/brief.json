@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "小红书真实 Feed 封面模式",
+    "platform": "xhs",
+    "format": "xhs",
+    "style": "sl-electric-blue",
+    "brand": "BLCaptain Style",
+    "footer": "xiaohongshu feed patterns / v0.6"
+  },
+  "cards": [
+    {
+      "name": "01-text-bomb",
+      "layout": "xhs-text-bomb",
+      "style": "sl-electric-blue",
+      "badge": "真实 Feed 模式",
+      "title": "封面先抓人，再讲道理",
+      "subtitle": "大字、强情绪、人物表情，比精致留白更容易被看见。",
+      "sticker": "高停留",
+      "image": {
+        "src": "assets/xhs-person-hook.png",
+        "purpose": "person-hook",
+        "position": "center 50%"
+      }
+    },
+    {
+      "name": "02-photo-proof",
+      "layout": "xhs-photo-proof",
+      "style": "sp-warm-study",
+      "kicker": "Raw Photo",
+      "title": "真实感本身就是设计",
+      "subtitle": "推荐流里很多高互动封面不是设计图，而是现场照片。",
+      "image": {
+        "src": "assets/xhs-food-table.png",
+        "purpose": "food-table",
+        "position": "center 50%"
+      }
+    },
+    {
+      "name": "03-fitness-bomb",
+      "layout": "xhs-text-bomb",
+      "style": "sl-acid-lime",
+      "badge": "结果承诺",
+      "title": "变化要放在第一眼",
+      "subtitle": "减脂、教程、攻略类，结果比过程更像点击理由。",
+      "sticker": "结果感",
+      "image": {
+        "src": "assets/xhs-fitness-hook.png",
+        "purpose": "fitness-hook",
+        "position": "center 50%"
+      }
+    },
+    {
+      "name": "04-tech-proof",
+      "layout": "xhs-text-bomb",
+      "style": "sl-graphite-mint",
+      "badge": "工具技巧",
+      "title": "功能名要大到能一眼读完",
+      "subtitle": "手机、App、AI 工具类：黑底 + 大字 + 实物/截图更稳。",
+      "sticker": "教程感",
+      "image": {
+        "src": "assets/xhs-phone-proof.png",
+        "purpose": "phone-proof",
+        "position": "center 50%"
+      }
+    },
+    {
+      "name": "05-hook-list",
+      "layout": "xhs-hook-list",
+      "style": "sl-safety-coral",
+      "kicker": "Pattern Library",
+      "title": "小红书封面 5 个真模式",
+      "subtitle": "不是越高级越好，而是越像真实内容越容易停住。",
+      "items": [
+        {
+          "title": "真实照片",
+          "body": "人物、食物、现场、截图，比抽象图更可信。"
+        },
+        {
+          "title": "结果承诺",
+          "body": "瘦了、会了、避坑了、发现了，先露结果。"
+        },
+        {
+          "title": "强情绪词",
+          "body": "惊到、哭死、好烦、谁懂啊，降低理解成本。"
+        },
+        {
+          "title": "超大标题",
+          "body": "3 秒内读完，不要用漂亮小字。"
+        },
+        {
+          "title": "证据前置",
+          "body": "截图、对比、实拍图放大，不当背景装饰。"
+        }
+      ]
+    }
+  ]
+}

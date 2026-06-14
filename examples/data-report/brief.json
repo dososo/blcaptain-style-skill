@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "AI 搜索引用变化",
+    "platform": "xhs",
+    "format": "xhs",
+    "style": "sl-safety-coral",
+    "brand": "BL Data Note",
+    "footer": "data poster / research note"
+  },
+  "cards": [
+    {
+      "name": "01-big-number",
+      "layout": "big-number-poster",
+      "style": "sl-safety-coral",
+      "kicker": "Data Signal",
+      "title": "AI 搜索，正在改写分发",
+      "number": "527%",
+      "subtitle": "数据图先让数字站出来，再让解释跟上。",
+      "bars": [
+        18,
+        26,
+        44,
+        61,
+        88,
+        100
+      ]
+    },
+    {
+      "name": "02-compare",
+      "layout": "trend-compare",
+      "style": "sl-safety-coral",
+      "kicker": "Before / After",
+      "title": "从搜索排名，到 AI 引用",
+      "left": {
+        "title": "Old SEO",
+        "body": "关键词、外链、页面排名。",
+        "points": [
+          "用户点进网页",
+          "结果页是入口"
+        ]
+      },
+      "right": {
+        "title": "AI Answer",
+        "body": "引用、摘要、可信来源。",
+        "points": [
+          "用户直接看答案",
+          "来源变成证据层"
+        ]
+      }
+    },
+    {
+      "name": "03-evidence",
+      "layout": "evidence-wall",
+      "style": "sl-graphite-mint",
+      "kicker": "Evidence Wall",
+      "title": "高传播数据图，要有证据感",
+      "evidence": [
+        {
+          "title": "来源",
+          "body": "来自报告、平台、公开数据。"
+        },
+        {
+          "title": "时间",
+          "body": "标清日期，避免旧数据误导。"
+        },
+        {
+          "title": "口径",
+          "body": "解释统计对象和范围。"
+        },
+        {
+          "title": "结论",
+          "body": "不要让读者自己猜。"
+        }
+      ]
+    }
+  ]
+}

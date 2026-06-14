@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- LEGACY_COMPATIBILITY_ONLY: 旧 Quiet Current 字体种子，仅保留给历史对照；当前入口使用 assets/template-still-paper-card.html。 -->
+<html lang="zh-CN" data-system="quiet-current">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Quiet Current Typography Seed</title>
+<style>
+:root {
+  --qc-display: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "STSong", "Noto Serif", Georgia, serif;
+  --qc-body: "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC", "Noto Sans", system-ui, sans-serif;
+  --bg: #f1ece1;
+  --fg: #171411;
+  --muted: #746b5e;
+  --accent: #6d3d2e;
+  --line: rgba(23,20,17,.20);
+  --surface: rgba(255,255,255,.38);
+}
+* { box-sizing: border-box; }
+body { margin:0; background:#d8d2c6; font-family: var(--qc-body); }
+.poster {
+  width:1080px;
+  height:1440px;
+  background:
+    radial-gradient(circle at 78% 12%, rgba(109,61,46,.12), transparent 26%),
+    repeating-linear-gradient(0deg, rgba(23,20,17,.028) 0 1px, transparent 1px 5px),
+    var(--bg);
+  color:var(--fg);
+  padding:76px 78px;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  position:relative;
+}
+.qc-label {
+  font-family: var(--qc-body);
+  font-size:17px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--accent);
+  font-weight:620;
+}
+.qc-display {
+  font-family: var(--qc-display);
+  font-size:112px;
+  line-height:.93;
+  letter-spacing:-.035em;
+  font-weight:720;
+  margin:0;
+  max-width:8.2ch;
+}
+.qc-body {
+  font-family: var(--qc-body);
+  font-size:29px;
+  line-height:1.52;
+  color:var(--muted);
+  margin:0;
+  max-width:760px;
+}
+.qc-caption {
+  font-family: var(--qc-body);
+  font-size:18px;
+  letter-spacing:.08em;
+  color:var(--muted);
+}
+.qc-number {
+  font-family: var(--qc-body);
+  font-size:42px;
+  line-height:1;
+  font-weight:650;
+  color:var(--accent);
+}
+.qc-quote {
+  font-family: var(--qc-display);
+  font-size:54px;
+  line-height:1.12;
+  letter-spacing:-.02em;
+  color:var(--fg);
+}
+.rule { height:1px; background:var(--line); width:100%; }
+.type-grid { display:grid; grid-template-columns:1fr 210px; gap:42px; margin-top:80px; }
+.note-card {
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:28px;
+}
+.foot {
+  margin-top:auto;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+</style>
+</head>
+<body>
+<!-- POSTERS_HERE -->
+</body>
+</html>

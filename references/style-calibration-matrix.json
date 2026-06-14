@@ -1,0 +1,150 @@
+{
+  "$schema": "https://blcaptain.local/schemas/style-calibration-matrix.v1.json",
+  "phase": "Phase 0.5 - Visual Calibration Reset",
+  "feedbackStates": [
+    "有希望",
+    "不对",
+    "值得继续",
+    "淘汰"
+  ],
+  "languageModes": [
+    {
+      "id": "LANG-CN",
+      "name": "中文主导",
+      "purpose": "验证中文标题、中文导语和中文阅读节奏是否能代表视觉系统。"
+    },
+    {
+      "id": "LANG-MIX",
+      "name": "中英混排",
+      "purpose": "验证英文不是 fallback，也不是普通 label，而是与中文、图片和底纹共同构成气质。"
+    },
+    {
+      "id": "LANG-EN",
+      "name": "全英文",
+      "purpose": "验证全英文卡不退化为普通英文模板，仍然保持 Still Paper / Signal Proof 的独立审美。"
+    }
+  ],
+  "typographyCalibration": {
+    "contactSheet": "local-tests/style-calibration-reset/output/style-calibration-language-typography-01.png",
+    "status": "PENDING_USER_DIRECTION",
+    "rule": "中文主导 / 中英混排 / 全英文三种语言模式都必须先看图确认；字体不能只是中规中矩的系统 fallback。",
+    "systems": [
+      {
+        "system": "Still Paper",
+        "modes": ["LANG-CN", "LANG-MIX", "LANG-EN"],
+        "voice": "纸感、文学、摄影、留白；英文像刊物标题、地点、边注和节奏标记，不像 SaaS label。"
+      },
+      {
+        "system": "Signal Proof",
+        "modes": ["LANG-CN", "LANG-MIX", "LANG-EN"],
+        "voice": "证据、结构、截图、数据；英文像系统仪表、proof id、工具名和判断标签，不像普通蓝白科技字。"
+      }
+    ]
+  },
+  "rules": [
+    "没有图，不算进展。",
+    "没有横向对比，不要求用户精修反馈。",
+    "技术 PASS 不等于视觉 PASS。",
+    "方向没对，不进入 engine binding。"
+  ],
+  "systems": [
+    {
+      "system": "Still Paper",
+      "contactSheet": "local-tests/style-calibration-reset/output/style-calibration-still-paper-01.png",
+      "themes": [
+        {
+          "id": "SP-01",
+          "name": "Mist Field",
+          "board": "01",
+          "boardPath": "references/visual-direction-boards/01.png",
+          "candidateLayouts": ["SP-C01", "SP-C03", "SP-E03"],
+          "feedback": "PENDING_USER_DIRECTION"
+        },
+        {
+          "id": "SP-02",
+          "name": "Warm Study",
+          "board": "02",
+          "boardPath": "references/visual-direction-boards/02.png",
+          "candidateLayouts": ["SP-C02", "SP-E01", "SP-E02"],
+          "feedback": "PENDING_USER_DIRECTION"
+        },
+        {
+          "id": "SP-03",
+          "name": "Coastal Quiet",
+          "board": "03",
+          "boardPath": "references/visual-direction-boards/03.png",
+          "candidateLayouts": ["SP-C01", "SP-C03", "SP-E03"],
+          "feedback": "PENDING_USER_DIRECTION"
+        },
+        {
+          "id": "SP-04",
+          "name": "Night Grain",
+          "board": "04",
+          "boardPath": "references/visual-direction-boards/04.png",
+          "candidateLayouts": ["SP-C04", "SP-E05"],
+          "feedback": "PENDING_USER_DIRECTION"
+        },
+        {
+          "id": "SP-05",
+          "name": "Hearth & Table",
+          "board": "05",
+          "boardPath": "references/visual-direction-boards/05.png",
+          "candidateLayouts": ["SP-C03", "SP-C02", "SP-E04"],
+          "feedback": "PENDING_USER_DIRECTION"
+        }
+      ]
+    },
+    {
+      "system": "Signal Proof",
+      "contactSheet": "local-tests/style-calibration-reset/output/style-calibration-signal-ledger-01.png",
+      "themes": [
+        {
+          "id": "SL-01",
+          "name": "Electric Blue",
+          "board": "06",
+          "boardPath": "references/visual-direction-boards/06.png",
+          "candidateLayouts": ["SL-C01", "SL-C02", "SL-C04"],
+          "feedback": "PENDING_USER_DIRECTION"
+        },
+        {
+          "id": "SL-02",
+          "name": "Graphite Mint",
+          "board": "07",
+          "boardPath": "references/visual-direction-boards/07.png",
+          "candidateLayouts": ["SL-C02", "SL-C04"],
+          "feedback": "PENDING_USER_DIRECTION"
+        },
+        {
+          "id": "SL-03",
+          "name": "Safety Coral",
+          "board": "08",
+          "boardPath": "references/visual-direction-boards/08.png",
+          "candidateLayouts": ["SL-C01", "SL-C03"],
+          "feedback": "PENDING_USER_DIRECTION"
+        },
+        {
+          "id": "SL-04",
+          "name": "Acid Lime",
+          "board": "09",
+          "boardPath": "references/visual-direction-boards/09.png",
+          "candidateLayouts": ["SL-C03", "SL-C04"],
+          "feedback": "PENDING_USER_DIRECTION"
+        }
+      ]
+    },
+    {
+      "system": "Bridge Canvas",
+      "contactSheet": "local-tests/style-calibration-reset/output/style-calibration-signal-ledger-01.png",
+      "themes": [
+        {
+          "id": "BC-01",
+          "name": "Bridge Canvas",
+          "board": "10",
+          "boardPath": "references/visual-direction-boards/10.png",
+          "candidateLayouts": ["SYSTEM-OVERVIEW", "README-HERO"],
+          "feedback": "PENDING_USER_DIRECTION"
+        }
+      ]
+    }
+  ]
+}

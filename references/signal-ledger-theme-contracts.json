@@ -1,0 +1,228 @@
+{
+  "$schema": "https://blcaptain.local/schemas/signal-ledger-theme-contracts.v1.json",
+  "system": "Signal Proof",
+  "purpose": "Lock Signal Proof into distinct evidence/data/workflow directions so outputs do not collapse into one blue-white tech template.",
+  "status": {
+    "SL-01 Electric Blue": "approved",
+    "SL-02 Graphite Mint": "approved",
+    "SL-03 Safety Coral": "approved",
+    "SL-04 Acid Lime": "approved",
+    "SL-05 Signal Noir": "candidate-needs-direction-board",
+    "BC-01 Bridge Canvas": "system-display-layer"
+  },
+  "themes": {
+    "SL-01 Electric Blue": {
+      "board": "06",
+      "role": "AI tools / product tutorial / method explanation",
+      "palette": {
+        "bg": "#F6F7FA",
+        "surface": "#FFFFFF",
+        "fg": "#15181D",
+        "muted": "#6C7580",
+        "accent": "#2F5EA7",
+        "accent2": "#AFC2DE",
+        "line": "#DCE3EE",
+        "grid": "#E7EDF5",
+        "dark": "#12161D"
+      },
+      "texture": {
+        "base": "light proof paper",
+        "grid": "ledger-grid-light",
+        "strength": "low",
+        "avoid": "generic blue-white SaaS template"
+      },
+      "proofTreatment": {
+        "preferred": "tool screenshot, workflow blocks, product steps, blue verification labels",
+        "forbid": "meaningless abstract AI robot, too many icons, overpacked dashboard"
+      },
+      "layoutTone": "clear, useful, fast, product tutorial",
+      "useCases": [
+        "AI 工具",
+        "产品教程",
+        "方法论",
+        "快速入门",
+        "流程解释"
+      ],
+      "antiPatterns": [
+        "蓝白 SaaS 模板",
+        "无意义科技装饰",
+        "图标堆叠",
+        "截图太小"
+      ]
+    },
+    "SL-02 Graphite Mint": {
+      "board": "07",
+      "role": "screenshot proof / interface evidence / workflow verification",
+      "palette": {
+        "bg": "#F6F5F1",
+        "surface": "#FFFFFF",
+        "fg": "#171A1D",
+        "muted": "#6D7680",
+        "accent": "#4A7A74",
+        "accent2": "#B8D4CF",
+        "line": "#DCE3E1",
+        "grid": "#E5ECEA",
+        "dark": "#141817"
+      },
+      "texture": {
+        "base": "proof paper",
+        "grid": "screen-matte / proof-grid",
+        "strength": "low-medium",
+        "avoid": "fake dashboard, decorative UI wallpaper"
+      },
+      "proofTreatment": {
+        "preferred": "browser frame, phone frame, real screenshot, source line, timestamp, callout",
+        "forbid": "fake UI nonsense, screenshot as background, tiny unreadable screenshot"
+      },
+      "layoutTone": "credible, evidence-first, interface-aware",
+      "useCases": [
+        "截图教程",
+        "产品 walkthrough",
+        "界面证据",
+        "工作流证明",
+        "Agent 操作记录"
+      ],
+      "antiPatterns": [
+        "伪看板",
+        "截图装饰化",
+        "无来源",
+        "callout 过多"
+      ]
+    },
+    "SL-03 Safety Coral": {
+      "board": "08",
+      "role": "data recap / KPI / growth / annual review",
+      "palette": {
+        "bg": "#F7F4F0",
+        "surface": "#FFFFFF",
+        "fg": "#171515",
+        "muted": "#746B67",
+        "accent": "#E56A4B",
+        "accent2": "#F3C7BA",
+        "line": "#E5D9D4",
+        "grid": "#EFE5E1",
+        "dark": "#161514"
+      },
+      "texture": {
+        "base": "data paper",
+        "grid": "data-grid-soft",
+        "strength": "low",
+        "avoid": "dashboard dump"
+      },
+      "proofTreatment": {
+        "preferred": "hero metric, chart, comparison block, conclusion sentence",
+        "forbid": "too many equal metrics, fake data, no source line"
+      },
+      "layoutTone": "warm data editorial, recap with conclusion",
+      "useCases": [
+        "KPI",
+        "数据复盘",
+        "年度总结",
+        "增长复盘",
+        "内容表现"
+      ],
+      "antiPatterns": [
+        "堆数字",
+        "无结论",
+        "红色警报风",
+        "假数据"
+      ]
+    },
+    "SL-04 Acid Lime": {
+      "board": "09",
+      "role": "decision / comparison / checklist / tool choosing",
+      "palette": {
+        "bg": "#F5F7EF",
+        "surface": "#FFFFFF",
+        "fg": "#151715",
+        "muted": "#6E7369",
+        "accent": "#A6C833",
+        "accent2": "#DCE9A8",
+        "line": "#DDE5CC",
+        "grid": "#E7ECD8",
+        "dark": "#151713"
+      },
+      "texture": {
+        "base": "decision ledger",
+        "grid": "checklist-grid",
+        "strength": "low-medium",
+        "avoid": "neon chaos"
+      },
+      "proofTreatment": {
+        "preferred": "decision tree, compare table, verdict card, checklist",
+        "forbid": "overuse of lime fill, loud poster, unclear verdict"
+      },
+      "layoutTone": "decisive, sharp, actionable",
+      "useCases": [
+        "工具对比",
+        "checklist",
+        "决策树",
+        "选择框架",
+        "购买建议"
+      ],
+      "antiPatterns": [
+        "霓虹乱跳",
+        "高饱和大面积填色",
+        "没有判断",
+        "信息过密"
+      ]
+    },
+    "SL-05 Signal Noir": {
+      "board": "pending",
+      "role": "dark technical evidence / benchmark / architecture / incident review",
+      "status": "candidate-needs-visual-direction-board",
+      "palette": {
+        "bg": "#0E1012",
+        "surface": "#171A1F",
+        "fg": "#F3F0E8",
+        "muted": "#A6A19A",
+        "accent": "#C8A45D",
+        "accent2": "#4F7568",
+        "line": "#2C3036",
+        "grid": "#24282E",
+        "danger": "#C46A5A"
+      },
+      "texture": {
+        "base": "dark ledger / carbon paper",
+        "grid": "dark-ledger-grid / terminal-grain",
+        "strength": "medium",
+        "avoid": "neon cyberpunk, game poster, unreadable gray text"
+      },
+      "proofTreatment": {
+        "preferred": "benchmark table, architecture trace, log panel, code evidence, model eval, incident timeline",
+        "forbid": "large glowing gradients, sci-fi decoration, fake terminal dump, red-alert overload"
+      },
+      "layoutTone": "serious, forensic, technical, compressed but readable",
+      "useCases": [
+        "模型评测",
+        "Benchmark",
+        "系统架构",
+        "故障复盘",
+        "安全分析",
+        "代码 Agent 工作流",
+        "日志分析",
+        "黑盒观察"
+      ],
+      "antiPatterns": [
+        "霓虹赛博朋克",
+        "游戏海报",
+        "大面积发光",
+        "小灰字不可读",
+        "假代码 / 假日志"
+      ],
+      "entryRequirement": [
+        "Generate and approve a visual direction board before implementation.",
+        "Add board mapping to visual-direction-map.json.",
+        "Add examples and run gate before any production layout."
+      ]
+    }
+  },
+  "bridgeCanvas": {
+    "BC-01 Bridge Canvas": {
+      "board": "10",
+      "role": "multi-platform / system overview / capability map",
+      "status": "system-display-layer",
+      "note": "Bridge Canvas is not a normal Signal Proof content-card theme. Use for README hero, product overview, platform coverage, and design-system explanation."
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "https://blcaptain.local/schemas/geometry-contracts.v1.json",
+  "description": "Contract-aware layout geometry rules. Symmetry is enforced only when the layout declares it.",
+  "defaults": {
+    "posterWidth": 1080,
+    "tolerancePx": 2
+  },
+  "contracts": {
+    "SP-C01": {
+      "name": "Still Paper Editorial Cover",
+      "mode": "symmetric-inset",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".image-zone",
+        ".bottom-note-zone",
+        ".footer-zone",
+        ".meta-zone",
+        ".details-zone"
+      ],
+      "description": "SP-C01 is a symmetric editorial cover. Main zones should share the same left/right inset."
+    },
+    "SP-MF-R01": {
+      "name": "Still Paper Mist Field Field Photo Cover",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".title",
+        ".lead",
+        ".photo"
+      ],
+      "description": "SP-MF-R01 follows board 01: a quiet title block and an image area carrying the lower half. Zones are freeform but must stay inside the 1080px poster."
+    },
+    "SP-MF-R01B": {
+      "name": "Still Paper Mist Field Field Photo Journal",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".title",
+        ".lead",
+        ".photo",
+        ".note-title",
+        ".footer-row"
+      ],
+      "description": "SP-MF-R01B preserves the R01 derivative layout: large editorial title, centered photo well, bottom journal note, stamp, and footer metadata. It is not a replacement for the source-board R01 lower-half image structure."
+    },
+    "SP-MF-R02": {
+      "name": "Still Paper Mist Field Full Photo Thesis",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".title",
+        ".photo",
+        ".bottom-meta"
+      ],
+      "description": "SP-MF-R02 follows board 01: a full-bleed mist mountain photo, upper-left editorial title in a quiet zone, and low-voice bottom metadata. Zones are freeform but must stay inside the 1080px poster."
+    },
+    "SP-MF-R03": {
+      "name": "Still Paper Mist Field Object Observation",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".paper",
+        ".meta",
+        ".title",
+        ".body",
+        ".botanical",
+        ".date-note"
+      ],
+      "description": "SP-MF-R03 follows board 01: a quiet paper observation card with low-voice text on the left and a botanical object cutout on the right. Zones are freeform but must stay inside the 1080px poster."
+    },
+    "SP-MF-R04": {
+      "name": "Still Paper Mist Field Night Lake Note",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".photo",
+        ".top-meta",
+        ".note-title",
+        ".bottom-meta",
+        ".anchor-line"
+      ],
+      "description": "SP-MF-R04 follows board 01: a full-bleed dark lake image with quiet white note text, top meta, bottom place/time strip, and a short right anchor line. Zones are freeform but must stay inside the 1080px poster."
+    },
+    "SP-MF-R05": {
+      "name": "Still Paper Mist Field Daily Record",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".paper",
+        ".record-title",
+        ".record-list",
+        ".closing",
+        ".botanical-stamp"
+      ],
+      "description": "SP-MF-R05 follows board 01: a quiet paper daily record card with title, icon rows, stamp, and closing line. Zones are freeform but must stay inside the 1080px poster."
+    },
+    "SP-MF-R06": {
+      "name": "Still Paper Mist Field Quote Photo",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".meta-left",
+        ".meta-right",
+        ".quote",
+        ".photo",
+        ".anchor"
+      ],
+      "description": "SP-MF-R06 follows the current user-corrected proof target: a full-bleed vertical travel image with quote, meta, date, stylized quote mark, and anchor over quiet mist zones. Zones are freeform but must stay inside the 1080px poster."
+    },
+    "SP-MF-R07": {
+      "name": "Still Paper Mist Field Essay Split",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".essay-title",
+        ".essay-note",
+        ".photo-strip"
+      ],
+      "description": "SP-MF-R07 follows board 01: left essay text and a right vertical image strip. Zones are freeform but must stay inside the 1080px poster."
+    },
+    "SP-MF-R08": {
+      "name": "Still Paper Mist Field Gear List",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".card-title",
+        ".gear-list",
+        ".closing"
+      ],
+      "description": "SP-MF-R08 follows board 01: a quiet paper gear checklist. Title, list, and closing note are freeform but must stay inside the 1080px poster."
+    },
+    "SP-C03": {
+      "name": "Still Paper Image-Led Note",
+      "mode": "declared-zones",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".image-zone",
+        ".footer-zone"
+      ],
+      "zones": {
+        ".image-zone": {
+          "left": 48,
+          "right": 48
+        },
+        ".footer-zone": {
+          "left": 64,
+          "right": 64
+        }
+      },
+      "description": "Image-led layouts may have different title-card geometry but the image and footer zones still follow declared bounds."
+    },
+    "SP-E05": {
+      "name": "Still Paper Moodboard Story",
+      "mode": "freeform-with-bounds",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".footer-zone"
+      ],
+      "description": "Moodboard layouts allow irregular internal collage placement, but footer and poster bounds must stay safe."
+    },
+    "SL-C02": {
+      "name": "Signal Proof Screenshot Proof",
+      "mode": "declared-zones",
+      "posterWidth": 1080,
+      "tolerancePx": 2,
+      "requiredZones": [
+        ".sl-shot",
+        ".sl-callouts",
+        ".footer-zone"
+      ],
+      "zones": {
+        ".sl-shot": {
+          "left": 64,
+          "right": 326
+        },
+        ".sl-callouts": {
+          "left": 780,
+          "right": 64
+        },
+        ".footer-zone": {
+          "left": 64,
+          "right": 64
+        }
+      },
+      "description": "Screenshot proof layouts are intentionally asymmetric: large screenshot left, callouts right."
+    }
+  }
+}

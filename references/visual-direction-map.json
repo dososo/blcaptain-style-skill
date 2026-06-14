@@ -1,0 +1,240 @@
+{
+  "$schema": "https://blcaptain.local/schemas/visual-direction-map.v1.json",
+  "description": "Maps layout/theme tasks to approved visual direction boards. This gate prevents style drift.",
+  "boards": {
+    "01": {
+      "name": "Still Paper · Mist Field",
+      "system": "Still Paper",
+      "themes": [
+        "Mist Field",
+        "SP-01 Mist Field"
+      ],
+      "allowedLayouts": [
+        "SP-C01",
+        "SP-E03",
+        "SP-C03"
+      ],
+      "keywords": [
+        "field",
+        "mist",
+        "mountain",
+        "lake",
+        "nature",
+        "山野",
+        "湖畔",
+        "雾感"
+      ]
+    },
+    "02": {
+      "name": "Still Paper · Warm Study",
+      "system": "Still Paper",
+      "themes": [
+        "Warm Study",
+        "SP-02 Warm Study"
+      ],
+      "allowedLayouts": [
+        "SP-C01",
+        "SP-C02",
+        "SP-E01",
+        "SP-E02"
+      ],
+      "keywords": [
+        "study",
+        "desk",
+        "book",
+        "coffee",
+        "阅读",
+        "书桌",
+        "咖啡"
+      ]
+    },
+    "03": {
+      "name": "Still Paper · Coastal Quiet",
+      "system": "Still Paper",
+      "themes": [
+        "Coastal Quiet",
+        "SP-03 Coastal Quiet"
+      ],
+      "allowedLayouts": [
+        "SP-C01",
+        "SP-C03",
+        "SP-E03"
+      ],
+      "keywords": [
+        "coastal",
+        "sea",
+        "quiet",
+        "habit",
+        "海边",
+        "清透",
+        "习惯"
+      ]
+    },
+    "04": {
+      "name": "Still Paper · Night Grain",
+      "system": "Still Paper",
+      "themes": [
+        "Night Grain",
+        "SP-04 Night Grain"
+      ],
+      "allowedLayouts": [
+        "SP-C01",
+        "SP-C04",
+        "SP-E05"
+      ],
+      "keywords": [
+        "night",
+        "film",
+        "game",
+        "cinematic",
+        "夜间",
+        "影视",
+        "游戏"
+      ]
+    },
+    "05": {
+      "name": "Still Paper · Hearth & Table",
+      "system": "Still Paper",
+      "themes": [
+        "Hearth & Table",
+        "SP-05 Hearth & Table"
+      ],
+      "allowedLayouts": [
+        "SP-C03",
+        "SP-E04",
+        "SP-C02"
+      ],
+      "keywords": [
+        "food",
+        "coffee",
+        "home",
+        "table",
+        "美食",
+        "咖啡",
+        "家居"
+      ]
+    },
+    "06": {
+      "name": "Signal Proof · Electric Blue",
+      "system": "Signal Proof",
+      "themes": [
+        "Electric Blue",
+        "SL-01 Electric Blue"
+      ],
+      "allowedLayouts": [
+        "SL-C01",
+        "SL-C02",
+        "SL-C03",
+        "SL-C04"
+      ],
+      "keywords": [
+        "ai",
+        "tool",
+        "tutorial",
+        "product",
+        "工具",
+        "教程"
+      ]
+    },
+    "07": {
+      "name": "Signal Proof · Graphite Mint",
+      "system": "Signal Proof",
+      "themes": [
+        "Graphite Mint",
+        "SL-02 Graphite Mint"
+      ],
+      "allowedLayouts": [
+        "SL-C02",
+        "SL-C04",
+        "SL-E05"
+      ],
+      "keywords": [
+        "screenshot",
+        "proof",
+        "workflow",
+        "截图",
+        "证据",
+        "工作流"
+      ]
+    },
+    "08": {
+      "name": "Signal Proof · Safety Coral",
+      "system": "Signal Proof",
+      "themes": [
+        "Safety Coral",
+        "SL-03 Safety Coral"
+      ],
+      "allowedLayouts": [
+        "SL-E01",
+        "SL-E02",
+        "SL-E05"
+      ],
+      "keywords": [
+        "data",
+        "kpi",
+        "growth",
+        "report",
+        "数据",
+        "复盘"
+      ]
+    },
+    "09": {
+      "name": "Signal Proof · Acid Lime",
+      "system": "Signal Proof",
+      "themes": [
+        "Acid Lime",
+        "SL-04 Acid Lime"
+      ],
+      "allowedLayouts": [
+        "SL-C03",
+        "SL-E04",
+        "SL-E05"
+      ],
+      "keywords": [
+        "decision",
+        "checklist",
+        "comparison",
+        "决策",
+        "对比"
+      ]
+    },
+    "10": {
+      "name": "Bridge Canvas · Multi-Platform",
+      "system": "Bridge Canvas",
+      "themes": [
+        "Bridge Canvas",
+        "BC-01 Bridge Canvas"
+      ],
+      "allowedLayouts": [
+        "SYSTEM-OVERVIEW",
+        "README-HERO"
+      ],
+      "keywords": [
+        "overview",
+        "platform",
+        "system",
+        "总览",
+        "平台"
+      ]
+    }
+  },
+  "tasks": {
+    "SP-C01": {
+      "currentBoard": "01",
+      "system": "Still Paper",
+      "theme": "SP-01 Mist Field",
+      "layout": "SP-C01",
+      "notes": "Current SP-C01 has pivoted from Coastal Quiet to Mist Field because the content and stable hero direction fit mountain/lake field-note style."
+    }
+  },
+  "candidateBoards": {
+    "SL-05": {
+      "name": "Signal Proof · Signal Noir",
+      "system": "Signal Proof",
+      "theme": "SL-05 Signal Noir",
+      "status": "candidate-needs-visual-direction-board",
+      "reason": "Covers dark technical evidence, model eval, benchmark, architecture, incident review, safety/security, logs/code proof.",
+      "entryRequirement": "Generate and approve a visual direction board before adding this to active boards."
+    }
+  }
+}

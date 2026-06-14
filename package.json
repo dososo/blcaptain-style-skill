@@ -1,0 +1,95 @@
+{
+  "name": "blcaptain-style-skill",
+  "version": "1.2.0",
+  "description": "BLCaptain Style Skill: fixed-layout visual generation workflow for social cards, covers, decks, and article visuals.",
+  "type": "module",
+  "author": "爆裂队长NEXT <blteam2026@outlook.com>",
+  "homepage": "https://github.com/dososo/blcaptain-style-skill#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dososo/blcaptain-style-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dososo/blcaptain-style-skill/issues"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "render.mjs",
+    "validate-social-deck.mjs",
+    "references/",
+    "!references/visual-direction-boards/",
+    "examples/",
+    "!examples/generated/",
+    "!examples/agent-parallel-research/assets/**",
+    "!examples/founder-diary/assets/**",
+    "!examples/harmony-auto-campaign/assets/**",
+    "!examples/screenshot-tutorial/assets/**",
+    "!examples/xhs-feed-patterns/assets/**",
+    "README.md",
+    "README.en.md",
+    "SKILL.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "PRODUCT.md",
+    "CHANGELOG.md",
+    "docs/hero-cover-wall.png",
+    "docs/gallery/"
+  ],
+  "bin": {
+    "blcaptain-style": "./bin/blcaptain-style.mjs"
+  },
+  "scripts": {
+    "demo": "node bin/blcaptain-style.mjs demo",
+    "build:agent": "node bin/blcaptain-style.mjs build examples/agent-parallel-research/brief.json --out examples/generated/agent-parallel-research",
+    "build:auto": "node bin/blcaptain-style.mjs build examples/harmony-auto-campaign/brief.json --out examples/generated/harmony-auto-campaign",
+    "build:diary": "node bin/blcaptain-style.mjs build examples/founder-diary/brief.json --out examples/generated/founder-diary",
+    "render:agent": "node bin/blcaptain-style.mjs render examples/generated/agent-parallel-research/index.html",
+    "validate:agent": "node bin/blcaptain-style.mjs validate examples/generated/agent-parallel-research/index.html",
+    "check": "node --check bin/blcaptain-style.mjs && node --check render.mjs && node --check validate-social-deck.mjs && node --check scripts/asset-source-gate.mjs && node --check scripts/font-environment-gate.mjs && node --check scripts/full-bleed-composition-gate.mjs && node --check scripts/layout-geometry-gate.mjs && node --check scripts/make-readme-social-cover-wall.mjs && node --check scripts/run-gates.mjs && node --check scripts/style-pack-alignment-gate.mjs && node --check scripts/variant-proof.mjs && node --check src/assets.mjs && node --check src/audit.mjs && node --check src/data.mjs && node --check src/engine.mjs && node --check src/html.mjs && node --check src/imageWorkflow.mjs && node --check src/lintBrief.mjs && node --check src/plan.mjs && node --check src/render.mjs && node --check src/reviewReport.mjs && node --check src/stylePacks.mjs && node --check src/styles.css.mjs && node --check src/validate.mjs",
+    "test:gates": "node --test scripts/blcaptain-visual-grammar-contracts.test.mjs && node --test scripts/cover-variety-expansion.test.mjs && node --test scripts/domestic-image-sources.test.mjs && node --test scripts/font-environment-gate.test.mjs && node --test scripts/full-bleed-composition-gate.test.mjs && node --test scripts/image-source-pipeline.test.mjs && node --test scripts/non-copying-boundary-alignment.test.mjs && node --test scripts/package-check-coverage.test.mjs && node --test scripts/plan-entry-alignment.test.mjs && node --test scripts/public-docs-alignment.test.mjs && node --test scripts/signal-content-routing.test.mjs && node --test scripts/signal-theme-palette.test.mjs && node --test scripts/skill-docs-alignment.test.mjs && node --test scripts/sp-ws-cover-mother-routing.test.mjs && node --test scripts/still-paper-theme-palette.test.mjs && node --test scripts/style-pack-alignment-gate.test.mjs && node --test scripts/style-pack-cli-output.test.mjs && node --test scripts/theme-cli-alignment.test.mjs && node --test scripts/three-languages-render.test.mjs && node --test scripts/thumbnail-readability-gate.test.mjs && node --test scripts/validate-content-gates.test.mjs && node --test scripts/visual-audit-read-errors.test.mjs",
+    "plan:sample": "node bin/blcaptain-style.mjs plan examples/source-article.md --out examples/generated/planned-brief.json --style sl-blue --format xhs",
+    "lint:agent": "node bin/blcaptain-style.mjs lint examples/agent-parallel-research/brief.json",
+    "audit": "node bin/blcaptain-style.mjs audit",
+    "render:fallback:agent": "python3 scripts/render-weasyprint.py examples/generated/agent-parallel-research",
+    "visual-audit": "python3 scripts/visual-audit.py examples/generated",
+    "score": "python3 scripts/quality-score.py examples/generated",
+    "gallery": "python3 scripts/make-gallery.py examples/generated",
+    "build:screenshot": "node bin/blcaptain-style.mjs build examples/screenshot-tutorial/brief.json --out examples/generated/screenshot-tutorial",
+    "build:data": "node bin/blcaptain-style.mjs build examples/data-report/brief.json --out examples/generated/data-report",
+    "release:check": "npm run check && npm run test:gates",
+    "build:xhs-feed": "node bin/blcaptain-style.mjs build examples/xhs-feed-patterns/brief.json --out examples/generated/xhs-feed-patterns",
+    "render:fallback:xhs-feed": "python3 scripts/render-weasyprint.py examples/generated/xhs-feed-patterns",
+    "image:plan:demo": "node bin/blcaptain-style.mjs image-plan examples/xhs-feed-patterns/brief.json --out examples/generated/xhs-feed-patterns/assets/IMAGE_REQUESTS.md",
+    "themes": "node bin/blcaptain-style.mjs themes",
+    "validate:root:agent": "node validate-social-deck.mjs examples/generated/agent-parallel-research",
+    "render:root:agent": "node render.mjs examples/generated/agent-parallel-research",
+    "style-packs": "node bin/blcaptain-style.mjs style-packs",
+    "recommend:xhs-food": "node bin/blcaptain-style.mjs recommend-style --platform xhs --category food --intent proof",
+    "recommend:wechat-ai": "node bin/blcaptain-style.mjs recommend-style --platform wechat --category ai --intent essay",
+    "gate:asset": "node scripts/asset-source-gate.mjs",
+    "gate:geometry": "node scripts/layout-geometry-gate.mjs",
+    "gate:run": "node scripts/run-gates.mjs",
+    "gate:style-packs": "node scripts/style-pack-alignment-gate.mjs"
+  },
+  "keywords": [
+    "claude-skill",
+    "codex-skill",
+    "social-card",
+    "xiaohongshu",
+    "wechat-cover",
+    "playwright",
+    "html-to-png",
+    "style-system",
+    "fixed-layout",
+    "visual-skill",
+    "agent-skill"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "playwright": "^1.54.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

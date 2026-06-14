@@ -1,0 +1,32 @@
+[
+  {
+    "platform": "xhs",
+    "category": "food",
+    "intent": "proof"
+  },
+  {
+    "platform": "xhs",
+    "category": "fitness",
+    "intent": "result"
+  },
+  {
+    "platform": "xhs",
+    "category": "ai",
+    "intent": "tutorial"
+  },
+  {
+    "platform": "wechat",
+    "category": "ai",
+    "intent": "essay"
+  },
+  {
+    "platform": "wechat",
+    "category": "data",
+    "intent": "report"
+  },
+  {
+    "platform": "wechat",
+    "category": "auto",
+    "intent": "campaign"
+  }
+]
